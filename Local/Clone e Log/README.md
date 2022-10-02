@@ -16,17 +16,23 @@ git log
 
 ### **Argumentos**
 
-Alguns dos argumentos mais importantes para o comando `git log` são o `-p` e o `-<number>`.
+Alguns dos argumentos mais importantes para o comando `git log` são: 
 
-O comando `git log -p` mostra a alteração realizada nos commits.
+O comando `git log -p` que mostra a alteração realizada nos commits.
 
 ```bash
 git log -p
 ```
-O comando `git log -<x>` mostra as últimas x alerações realizadas no repositório.
+O comando `git log -<x>` que mostra as últimas x alerações realizadas no repositório.
 
 ```bash
 git log -10
+```
+
+Os comandos `--since=1.month.ago` e `--until=1.day.ago` que permitem a visualização dos commits realizados desde um mês atrás, até ontem.
+
+```bash
+git log --since=1.month.ago --until=1.day.ago
 ```
 
 #### **--stat & --pretty**
