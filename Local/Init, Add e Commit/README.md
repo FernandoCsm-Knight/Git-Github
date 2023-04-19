@@ -7,7 +7,7 @@ O comando `git init` é utilizado para iniciar um repositório local. Esse coman
 git init
 ```
 
-Com uma *branch* inicial já é possível iniciar o monitoramento e versionamento do código. Veja os próximos comandos deste arquivo para entender como rastrear/monitorar um arquivo e suas alterações.
+Com uma *branch* inicial já é possível iniciar o monitoramento e versionamento do código. Veja os próximos comandos deste arquivo para entender como monitorar um arquivo e suas alterações.
 
 |Opção|Funçao|
 |:-----:|:-----:|
@@ -18,7 +18,7 @@ Com uma *branch* inicial já é possível iniciar o monitoramento e versionament
 
 O comando `git add` inclui arquivos para serem rastreados pelo SCV. Para fazer isso o comando atualiza o *index* (índice) do git, uma estrutura utilizada para guardar uma *snapshot* do código versionado. A última *snapshot* armazenada no *index* será utilizada como o conteúdo do próximo *commit*.
 
-Para entender melhor como esse processo funciona você pode pensar que ao preparar o seu commit suas alterações estarão "escaneadas" pelo git em uma área chamada *stage*. Caso queira visualizar os arquivos que você já adicionou na *stage* atente-se a observação abaixo.
+Para entender melhor como o processo pense que ao preparar o seu commit suas alterações estarão sendo "escaneadas" pelo git a medida que você as adiciona ao *stage*. Caso queira visualizar os arquivos que você já adicionou na *stage* atente-se a observação abaixo.
 
 > **Obs:** para obter um sumário de quais modificações estão sendo rastreadas utilize o comando `git status`.
 > 
@@ -54,7 +54,7 @@ Exemplo:
 git commit
 ```
 
-Ao executar o comando acima um editor de código de sua preferência será aberto para que você digite sua descrição. Uma alternativa é utilizar a opção `-m` e escrever sua mensagem na mesma linha.
+Ao executar o comando acima um editor de código de sua preferência será aberto para que você digite uma mensagem. Essa mensagem será o título do seu *commit*, ao mesmo tempo, você também pode adicionar ao *commit* uma descrição. Uma alternativa é utilizar a opção `-m` e escrever sua mensagem na mesma linha.
 
 Exemplo
 ```bash
