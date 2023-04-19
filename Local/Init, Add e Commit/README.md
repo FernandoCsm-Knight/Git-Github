@@ -18,7 +18,7 @@ Com uma *branch* inicial já é possível iniciar o monitoramento e versionament
 
 O comando `git add` inclui arquivos para serem rastreados pelo SCV. Para fazer isso o comando atualiza o *index* (índice) do git, uma estrutura utilizada para guardar uma *snapshot* do código versionado. A última *snapshot* armazenada no *index* será utilizada como o conteúdo do próximo *commit*.
 
-Para entender melhor como o processo pense que ao preparar o seu commit suas alterações estarão sendo "escaneadas" pelo git a medida que você as adiciona ao *stage*. Caso queira visualizar os arquivos que você já adicionou na *stage* atente-se a observação abaixo.
+Para entender melhor como o processo funciona pense que ao preparar o seu commit suas alterações estarão sendo "escaneadas" pelo git a medida que você as adiciona ao *stage*. Caso queira visualizar os arquivos que você já adicionou na *stage* atente-se a observação abaixo.
 
 > **Obs:** para obter um sumário de quais modificações estão sendo rastreadas utilize o comando `git status`.
 > 
@@ -45,7 +45,7 @@ git add HelloWorld.js
 
 ## **Git Commit**
 
-O comando `git commit` salva a *snapshot* do *index* em um novo "*commit*". Um *commit* pode ser entendido como o estado do seu projeto em um ponto específico da linha do tempo. Portanto, na linha do tempo de desenvolvimento de um projeto, diversos *commits* estão presentes, permitindo a visualização de todo o processo de criação da uma aplicação.
+O comando `git commit` salva a *snapshot* do *index* em um novo "*commit*". Um *commit* pode ser entendido como o estado do seu projeto em um ponto específico da linha do tempo. Portanto, na linha do tempo de desenvolvimento de um projeto, diversos *commits* estão presentes, permitindo a visualização de todo o processo de desenvolvimento da aplicação.
 
 Seu *commit* também deve apresentar uma "descrição", uma mensagem de *log*, para facilitar a localização de uma alteração na linha do tempo.
 
